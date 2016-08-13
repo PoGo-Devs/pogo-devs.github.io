@@ -1,0 +1,77 @@
+.row {
+    padding: 50px 5% 0 5%;
+}
+header {
+    height: 100vh;
+    background: url(../img/Park.png);
+    background-size: cover;
+    color: #fff;
+}
+header a {
+    color: #ddeeee;
+}
+header a:hover {
+    color: #fff;
+}
+header .content {
+    position: relative;
+    top: 50%;
+    margin-top: -110px;
+}
+header .content .center {
+    background: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 15px 30px;
+}
+header .logo, header .text {
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+}
+header .logo {
+    width: 150px;
+    height: 187px;
+    padding: 25px 0;
+    position: relative;
+    top: 35px;
+}
+header .logo img {
+    margin-top: -35px;
+}
+header .content .text hr {
+    background: #ddeeee;
+    height: 1px;
+    width: 100%;
+    margin: 15px 0;
+}
+header .content .text h1 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+#links ul li {
+    display: inline;
+}
+#links ul li a {
+    display: inline-block;
+    font-size: 1.7em;
+}
+#links ul span {
+    color: #ddeeee;
+    display: inline-block;
+    font-size: 1.7em;
+    padding: 0 10px;
+}
+section h2 {
+    color: #777;
+    font-size: 2em;
+    font-weight: lighter;
+}
+section p {
+    color: #888;
+    font-size: 1.5em;
+    padding: 15px 15px 0 15px;
+}
+#footer {
+    background: #333;
+    color: #fff;
+}
