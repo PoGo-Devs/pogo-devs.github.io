@@ -1,53 +1,42 @@
 .row {
-    padding: 50px 5% 0 5%;
+    padding: 50px 5%;
+    border-top: 1px solid #d0d0d0;
 }
+
+/** HEADER **/
 header {
     height: 100vh;
     background: url(../img/Park.png);
     background-size: cover;
     color: #fff;
 }
-header a {
-    color: #ddeeee;
-}
-header a:hover {
-    color: #fff;
-}
+header a { color: #ddeeee; }
+header a:hover { color: #fff; }
 header .content {
     position: relative;
     top: 50%;
-    margin-top: -110px;
+    margin-top: -160px;
 }
 header .content .center {
     background: rgba(0, 0, 0, 0.1);
-    display: inline-block;
     padding: 15px 30px;
+    max-width: 650px;
 }
-header .logo, header .text {
-    display: inline-block;
-    position: relative;
-    padding-left: 10px;
-}
-header .logo {
-    width: 150px;
-    height: 187px;
+header .content .center .logo {
     padding: 25px 0;
-    position: relative;
-    top: 35px;
 }
-header .logo img {
-    margin-top: -35px;
-}
-header .content .text hr {
+header .content .center .text hr {
     background: #ddeeee;
     height: 1px;
     width: 100%;
     margin: 15px 0;
 }
-header .content .text h1 {
+header .content .center .text h1 {
     font-size: 1.7em;
     font-weight: normal;
 }
+
+/** HEADER LINKS **/
 #links ul li {
     display: inline;
 }
@@ -55,23 +44,114 @@ header .content .text h1 {
     display: inline-block;
     font-size: 1.7em;
 }
-#links ul span {
+#links ul li span {
     color: #ddeeee;
     display: inline-block;
     font-size: 1.7em;
     padding: 0 10px;
 }
-section h2 {
-    color: #777;
-    font-size: 2em;
-    font-weight: lighter;
-}
-section p {
+
+/** SECTIONS **/
+section div {
     color: #888;
-    font-size: 1.5em;
-    padding: 15px 15px 0 15px;
+    font-size: 13px;
 }
+section div p, section div .p {
+    margin: 15px;
+}
+section ul, section li {
+    margin: 5px 15px;
+}
+section h1, section h2, section h3, section h4 {
+    color: #777;
+    font-weight: lighter;
+    margin: 15px 0;
+}
+section h1 { font-size: 1.8em; }
+section h2 { font-size: 1.6em; }
+section h3 { font-size: 1.3em; }
+section h4 { font-size: 1.2em; }
+
+section h3 .data {
+    font-size: 0.7em;
+    float: right;
+    background: #f9f9f9;
+    padding: 5px;
+}
+section#Releases ul li {
+    background: #f0f0f0;
+    border: 1px solid #e0e0e0;
+    list-style-type: none;
+    margin: 0 15px;
+    padding: 20px;
+}
+section#Releases ul li ul {
+    border: none;
+    background: #e0e0e0;
+    display: none;
+    padding: 5px 0px;
+}
+section#Releases ul li ul li {
+    background: #e5e5e5;
+    border: none;
+    padding: 0;
+    margin: 10px 15px;
+    color: #666;
+}
+section .change-log, section .release-download a, section#Releases ul li ul li span {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 5px 0 0 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: #f0f0f0;
+}
+section#Releases ul li ul li span {
+    cursor: default;
+    margin: 0 5px 0 0;
+    min-width: 75px;
+    text-align: center;
+}
+section .change-log:hover, section .release-download a:hover, section#Releases ul li ul li span:hover {
+    color: #ffffff;
+}
+section .release-download a { background: #5cc8ba; }
+section .release-download a:hover { background: #5cd8c8; }
+section#Releases ul li ul li span.fix { background: #e89153; }
+section#Releases ul li ul li span.add { background: #59c554; }
+section#Releases ul li ul li span.update { background: #54a6c5; }
+section#Releases ul li ul li span.remove { background: #b95454; }
+section .change-log { background: #898989; }
+section .change-log:hover { background: #9a9a9a; }
+
+/** FOOTER **/
 #footer {
     background: #333;
     color: #fff;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+@media (max-width: 860px) {
+    header {
+        height: auto;
+        min-height: 100vh;
+    }
+    header .content {
+        margin-top: 0;
+    }
+    header .content {
+        display: block;
+        position: inherit;
+    }
+    #links ul li, #links ul li a {
+        display: block;
+    }
+    #links ul li a {
+        padding: 10px 0;
+    }
+    #links ul li span {
+        display: none;
+    }
 }
