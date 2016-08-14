@@ -89,9 +89,9 @@ section#Releases ul li ul {
     border: none;
     background: #e0e0e0;
     display: none;
-    padding: 5px 0;
+    padding: 10px;
     margin: 0;
-    
+
 }
 section#Releases ul li ul li {
     background: #e5e5e5;
@@ -100,7 +100,7 @@ section#Releases ul li ul li {
     margin: 10px 15px;
     color: #666;
 }
-section .change-log, section .release-download a, section#Releases ul li ul li span {
+section .change-log, section .release-download a, section#Releases span.label {
     cursor: pointer;
     display: inline-block;
     font-size: 0.8em;
@@ -109,7 +109,7 @@ section .change-log, section .release-download a, section#Releases ul li ul li s
     text-transform: uppercase;
     color: #f0f0f0;
 }
-section#Releases ul li ul li span {
+section#Releases span.label {
     cursor: default;
     margin: 0 5px 0 0;
     min-width: 75px;
@@ -120,10 +120,10 @@ section .change-log:hover, section .release-download a:hover, section#Releases u
 }
 section .release-download a { background: #5cc8ba; }
 section .release-download a:hover { background: #5cd8c8; }
-section#Releases ul li ul li span.fix { background: #e89153; }
-section#Releases ul li ul li span.add { background: #59c554; }
-section#Releases ul li ul li span.update { background: #54a6c5; }
-section#Releases ul li ul li span.remove { background: #b95454; }
+section#Releases span.fix { background: #e89153; }
+section#Releases span.add { background: #59c554; }
+section#Releases span.update { background: #54a6c5; }
+section#Releases span.remove { background: #b95454; }
 section .change-log { background: #898989; }
 section .change-log:hover { background: #9a9a9a; }
 
