@@ -91,6 +91,7 @@ section#Releases ul li ul {
     display: none;
     padding: 5px 0;
     margin: 0;
+    
 }
 section#Releases ul li ul li {
     background: #e5e5e5;
@@ -154,5 +155,9 @@ section .change-log:hover { background: #9a9a9a; }
     }
     #links ul li span {
         display: none;
+    }
+    section#Releases ul li, section#Releases ul {
+        margin: 0;
+        padding: 10px;
     }
 }
