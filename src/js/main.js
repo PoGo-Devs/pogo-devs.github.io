@@ -17,9 +17,9 @@ jQuery.getJSON("https://api.github.com/repos/ST-Apps/PoGo-UWP/releases", functio
             pad = "00";
             return pad.substring(0, pad.length - str.length) + str;
         }
-        dataTime = dataTime.replace("Z", "").split(/[- :T]/);
-        dataTime = new Date(dataTime[0], dataTime[1], dataTime[2], dataTime[3], dataTime[4], dataTime[5]);
-        return dataFill(dataTime.getMonth()) + '/' + dataFill(dataTime.getDay()) + '/' + dataTime.getFullYear();
+        //dataTime = dataTime.replace("Z", "").split(/[- :T]/);
+        dataTime = new Date(dataTime);
+        return dataFill(dataTime.getMonth()+1) + '/' + dataFill(dataTime.getDate()) + '/' + dataTime.getFullYear();
     }
     for (i = 0; i < 5; i++) {
         target = "#Releases .v" + (i + 1);
