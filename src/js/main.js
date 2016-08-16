@@ -1,6 +1,6 @@
-jQuery("#About div").load("sections/sections/about.html");
-jQuery("#Contribute div").load("sections/sections/contribute.html");
-jQuery("#footer div").load("sections/sections/footer.html");
+jQuery("#About div").load("sections/about.html");
+jQuery("#Contribute div").load("sections/contribute.html");
+jQuery("#footer div").load("sections/footer.html");
 
 //http://stackoverflow.com/questions/7394748/whats-the-right-way-to-decode-a-string-that-has-special-html-entities-in-it
 function decodeHtml(str) {
