@@ -95,6 +95,7 @@ section#Releases ul li ul li {
     padding: 0;
     margin: 10px 15px;
     color: #666;
+    list-style-type: circle;
 }
 section .change-log, section .release-download a, section#Releases span.label {
     cursor: pointer;
