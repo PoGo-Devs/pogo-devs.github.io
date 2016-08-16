@@ -1,6 +1,6 @@
-jQuery("#About div").load("https://josefreittas.com/PoGo-UWP/sections/about.html");
-jQuery("#Contribute div").load("https://josefreittas.com/PoGo-UWP/sections/contribute.html");
-jQuery("#footer div").load("https://josefreittas.com/PoGo-UWP/sections/footer.html");
+jQuery("#About div").load("https://PoGo-Devs.github.io/sections/sections/about.html");
+jQuery("#Contribute div").load("https://PoGo-Devs.github.io/sections/sections/contribute.html");
+jQuery("#footer div").load("https://PoGo-Devs.github.io/sections/sections/footer.html");
 
 //http://stackoverflow.com/questions/7394748/whats-the-right-way-to-decode-a-string-that-has-special-html-entities-in-it
 function decodeHtml(str) {
@@ -39,18 +39,6 @@ jQuery.getJSON("https://api.github.com/repos/ST-Apps/PoGo-UWP/releases", functio
         jQuery(target + " .data").html(published);
         jQuery(target + " .release-download a").attr("href", url);
         jQuery(target + " ul").append(changelogHtml);
-
-        // for (var li = 0; li < chagelog.length; li++) {
-        //     line = chagelog[li];
-        //     line = line.replace(/^(\* )?((Probably fixed)|(Probably solved)|(Fixed)|(fixed))( -)?/, "<span class='fix'>Fixed</span>");
-        //     line = line.replace(/^(\* )?(Added)( -)?/, "<span class='add'>Added</span>");
-        //     line = line.replace(/^(\* )?(Updated)( -)?/, "<span class='update'>Updated</span>");
-        //     line = line.replace(/^(\* )?(Removed)( -)?/, "<span class='update'>Removed</span>");
-        //     line = line.replace(/(#)([0-9]+)/, "<a href='https://github.com/ST-Apps/PoGo-UWP/issues/$2' title='Issue $2'>Issue#$2</a>");
-        //     line = line.replace(/\[(.*)\]\((.*)\)/, "<a href='$2' title='$1'>$1</a>");
-        //     line = "<li>" + line + "</li>";
-        //     jQuery(target + " ul").append(line);
-        // }
     }
 });
 
