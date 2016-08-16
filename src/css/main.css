@@ -178,8 +178,15 @@ section#About ul {
     #links span {
         display: none;
     }
-    section#Releases ul li, section#Releases ul {
+    section#Releases ul {
+        margin: 0;
+        padding: 0px;
+    }
+    section#Releases ul li {
         margin: 0;
         padding: 10px;
+    }
+    section#Releases ul li ul {
+        padding: 5px 15px;
     }
 }
