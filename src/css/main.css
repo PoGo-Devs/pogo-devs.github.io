@@ -1,13 +1,21 @@
+body {
+    font-family: Arial;
+}
 .row {
     padding: 50px 5%;
     border-top: 1px solid #d0d0d0;
 }
+h1 { font-size: 20px; }
+h2 { font-size: 17px; }
+h3 { font-size: 15px; }
+h4 { font-size: 13px; }
 
 /** HEADER **/
 header {
     height: 100vh;
-    background: url(../img/Park.png);
+    background: url(../img/bg.png);
     background-size: cover;
+    background-position: center center;
     color: #fff;
 }
 header .content {
@@ -29,26 +37,41 @@ header .content .center .text hr {
     width: 100%;
     margin: 15px 0;
 }
-header .content .center .text h1 {
-    font-size: 1.7em;
-    font-weight: normal;
-}
 header a { color: #ddeeee; }
 header a:hover { color: #fff; }
 
 /** HEADER LINKS **/
-#links ul li {
-    display: inline;
-}
-#links ul li a {
+#links a {
     display: inline-block;
-    font-size: 1.7em;
+    font-size: 17px;
 }
-#links ul li span {
+#links span {
     color: #ddeeee;
     display: inline-block;
-    font-size: 1.7em;
+    font-size: 17px;
     padding: 0 10px;
+}
+
+#social {
+    background: url(../img/bg.png);
+    background-size: cover;
+    background-position: center top;
+    color: #fff;
+    font-size: 17px;
+}
+#social div {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+#social div div {
+    background: none;
+    padding: 0 0 15px 0;
+}
+#social a {
+    color: #ddeeee;
+}
+#social a:hover {
+    color: #ffffff;
 }
 
 /** SECTIONS **/
@@ -61,19 +84,15 @@ section div p, section div .p {
 }
 section h1, section h2, section h3, section h4 {
     color: #777;
-    font-weight: lighter;
     margin: 15px 0;
+    font-weight: bold;
 }
-section h1 { font-size: 1.8em; }
-section h2 { font-size: 1.6em; }
-section h3 { font-size: 1.3em; }
-section h4 { font-size: 1.2em; }
 
 section h3 .data {
-    font-size: 0.7em;
     float: right;
     background: #f9f9f9;
-    padding: 5px;
+    padding: 5px 10px;
+    font-size: 10px;
 }
 section#Releases ul li {
     background: #f0f0f0;
@@ -100,20 +119,20 @@ section#Releases ul li ul li {
 section .change-log, section .release-download a, section#Releases span.label {
     cursor: pointer;
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 10px;
     margin: 5px 0 0 0;
     padding: 5px 10px;
     text-transform: uppercase;
     color: #f0f0f0;
+}
+section .change-log:hover, section .release-download a:hover, section#Releases ul li ul li span:hover {
+    color: #ffffff;
 }
 section#Releases span.label {
     cursor: default;
     margin: 0 5px 0 0;
     min-width: 75px;
     text-align: center;
-}
-section .change-log:hover, section .release-download a:hover, section#Releases ul li ul li span:hover {
-    color: #ffffff;
 }
 section .release-download a { background: #5cc8ba; }
 section .release-download a:hover { background: #5cd8c8; }
@@ -149,18 +168,14 @@ section#About ul {
     }
     header .content {
         margin-top: 0;
-    }
-    header .content {
         display: block;
         position: inherit;
     }
-    #links ul li, #links ul li a {
+    #links a {
         display: block;
-    }
-    #links ul li a {
         padding: 10px 0;
     }
-    #links ul li span {
+    #links span {
         display: none;
     }
     section#Releases ul li, section#Releases ul {
