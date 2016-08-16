@@ -124,6 +124,10 @@ section#Releases span.improved { background: #50aadd; }
 section .change-log { background: #898989; }
 section .change-log:hover { background: #9a9a9a; }
 
+section#About ul {
+    margin-left: 35px;
+}
+
 /** FOOTER **/
 #footer {
     background: #333;
