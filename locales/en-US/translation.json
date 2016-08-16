@@ -1,0 +1,18 @@
+{
+	"date-format": "m/d/Y",
+	"page-title": "PoGo - Pokemon Go client from UWP",
+	"page-description": "PoGo, an UWP (Universal Windows Platform) client for Niantic's Pokémon© Go",
+	"title-about": "About project",
+	"title-releases": "Releases",
+	"title-contribute": "Contribute",
+	"title-social": "Social",
+	"title-github": "GitHub",
+	"title-reddit": "Reddit",
+	"title-discord": "DiscordApp",
+	"title-telegram": "Telegram",
+	"tille-loading": "Loading...",
+	"title-newest": "Newest!",
+	"title-show-log": "Show change log",
+	"title-hide-log": "Hide change log",
+	"title-download": "Download"
+}

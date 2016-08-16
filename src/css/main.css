@@ -10,6 +10,22 @@ h2 { font-size: 17px; }
 h3 { font-size: 15px; }
 h4 { font-size: 13px; }
 
+.links a {
+    display: inline-block;
+    font-size: 17px;
+    color: #ddeeee;
+}
+.links a:hover {
+    color: #fff;
+}
+.links span {
+    color: #ddeeee;
+    display: inline-block;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+
 /** HEADER **/
 header {
     height: 100vh;
@@ -37,41 +53,23 @@ header .content .center .text hr {
     width: 100%;
     margin: 15px 0;
 }
-header a { color: #ddeeee; }
-header a:hover { color: #fff; }
 
 /** HEADER LINKS **/
-#links a {
-    display: inline-block;
-    font-size: 17px;
-}
-#links span {
-    color: #ddeeee;
-    display: inline-block;
-    font-size: 17px;
-    padding: 0 10px;
-}
-
 #social {
     background: url(../img/bg.png);
     background-size: cover;
     background-position: center top;
     color: #fff;
-    font-size: 17px;
 }
-#social div {
+#social .main {
     background: rgba(0, 0, 0, 0.1);
     padding: 15px;
 }
-#social div div {
-    background: none;
+
+#social h2 {
     padding: 0 0 15px 0;
-}
-#social a {
-    color: #ddeeee;
-}
-#social a:hover {
-    color: #ffffff;
+    font-weight: lighter;
+    text-transform: uppercase;
 }
 
 /** SECTIONS **/
@@ -159,6 +157,19 @@ section#About ul {
 }
 #footer p {
 	margin-bottom: 10px;
+}
+#footer .links {
+    margin-top: 50px;
+    display: block;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+}
+#footer .links a, #footer .links span {
+    font-size: 12px;
+    color: #f0f0f0;
+}
+#footer .links a:hover {
+    color: #fff;
 }
 
 @media (max-width: 860px) {

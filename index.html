@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- GERAL -->
-    <title>PoGo - Pokemon Go client from UWP</title>
+    <title data-internationalize="page-title">PoGo - Pokemon Go client from UWP</title>
     <meta name="description" content="PoGo, an UWP (Universal Windows Platform) client for Niantic's Pokemon™ Go">
     <link rel="canonical" href="https://pogo-uwp.tk/">
     <meta name="robots" content="index, follow">
@@ -63,17 +63,17 @@
         <div class="content">
             <div class="center">
                 <div class="logo">
-                    <img src="src/img/logoLight.svg" alt="PoGo - Open source Pokemon Go from UWP" width="200">
+                    <img src="src/img/logoLight.svg" alt="PoGo - Open source Pokemon Go from UWP" width="200" data-internationalize="page-title">
                 </div>
                 <div class="text">
-                    <h1 style="font-weight: normal;">PoGo, an UWP (Universal Windows Platform) client for Niantic's Pokemon™ Go</h1>
+                    <h1 style="font-weight: normal;" data-internationalize="page-description">PoGo, an UWP (Universal Windows Platform) client for Niantic's Pokemon™ Go</h1>
                     <hr>
-                    <div id="links">
-                        <a href="#About" title="About project">About project</a>
+                    <div class="links">
+                        <a href="#About" title="About project" data-internationalize="title-about">About project</a>
                         <span>|</span>
-                        <a href="#Releases" title="Releases">Releases</a>
+                        <a href="#Releases" title="Releases" data-internationalize="title-releases">Releases</a>
                         <span>|</span>
-                        <a href="#Contribute" title="Contribute">Contribute</a>
+                        <a href="#Contribute" title="Contribute" data-internationalize="title-contribute">Contribute</a>
                         </ul>
                     </div>
                 </div>
@@ -81,68 +81,76 @@
         </div>
     </header>
     <div id="social" class="center text-center">
-        <div>
-            <div>SOCIAL</div>
-            <a href="https://github.com/ST-Apps/PoGo-UWP" title="PoGO on GitHub" target="_blank">GitHub</a>
-            <span>|</span>
-            <a href="https://www.reddit.com/r/PoGoUWP/" title="PoGO on Reddit" target="_blank">Reddit</a>
-            <span>|</span>
-            <a href="https://discord.gg/4GMbEWH" title="PoGO on Discord" target="_blank">Discord</a>
-            <span>|</span>
-            <a href="https://telegram.me/PoGoUWP" title="PoGO on Telegram" target="_blank">Telegram</a>
+        <div class="main">
+            <h2 data-internationalize="title-social">SOCIAL</h2>
+            <div class="links">
+                <a href="https://github.com/ST-Apps/PoGo-UWP" title="PoGO on GitHub" target="_blank" data-internationalize="title-github">GitHub</a>
+                <span>|</span>
+                <a href="https://www.reddit.com/r/PoGoUWP/" title="PoGO on Reddit" target="_blank" data-internationalize="title-reddit">Reddit</a>
+                <span>|</span>
+                <a href="https://discord.gg/4GMbEWH" title="PoGO on Discord" target="_blank" data-internationalize="title-discord">Discord</a>
+                <span>|</span>
+                <a href="https://telegram.me/PoGoUWP" title="PoGO on Telegram" target="_blank" data-internationalize="title-telegram">Telegram</a>
+            </div>
         </div>
     </div>
     <section id="About" class="row">
         <div>
-            <p>Loading</p>
+            <p data-internationalize="title-loading">Loading</p>
         </div>
     </section>
     <section id="Releases" class="row">
         <div>
-            <h2>Releases</h2>
+            <h2 data-internationalize="title-releases">Releases</h2>
             <ul>
                 <br>
-                <li class="v1">
-                    <h3><span class="version"></span> <span class="data"></span></h3>
+                <li class="v1" style="background: #DBF0DB">
+                    <h3><span class="newest" data-internationalize="title-newest">Newest!</span></h3>
+                    <h3><span class="version"></span><span class="data" data-internationalize="date-format"></span></h3>
                     <div>
-                        <span class="change-log" onclick="logShow(this);">Show change log</span>
-                        <span class='release-download'><a href="#">Download</a></span>
+                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <span class='release-download'><a href="#" data-internationalize="title-download">Download</a></span>
                         <ul style="display: none"></ul>
                     </div>
                 </li>
                 <br>
                 <li class="v2">
-                    <h3><span class="version"></span> <span class="data"></span></h3>
+                    <h3><span class="version"></span> <span class="data" data-internationalize="date-format"></span></h3>
                     <div>
-                        <span class="change-log" onclick="logShow(this);">Show change log</span>
-                        <span class='release-download'><a href="#">Download</a></span>
+                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <span class='release-download'><a href="#" data-internationalize="title-download">Download</a></span>
                         <ul style="display: none"></ul>
                     </div>
                 </li>
                 <br>
                 <li class="v3">
-                    <h3><span class="version"></span> <span class="data"></span></h3>
+                    <h3><span class="version"></span> <span class="data" data-internationalize="date-format"></span></h3>
                     <div>
-                        <span class="change-log" onclick="logShow(this);">Show change log</span>
-                        <span class='release-download'><a href="#">Download</a></span>
+                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <span class='release-download'><a href="#" data-internationalize="title-download');">Download</a></span>
                         <ul style="display: none"></ul>
                     </div>
                 </li>
                 <br>
                 <li class="v4">
-                    <h3><span class="version"></span> <span class="data"></span></h3>
+                    <h3><span class="version"></span> <span class="data" data-internationalize="date-format"></span></h3>
                     <div>
-                        <span class="change-log" onclick="logShow(this);">Show change log</span>
-                        <span class='release-download'><a href="#">Download</a></span>
+                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <span class='release-download'><a href="#" data-internationalize="title-download">Download</a></span>
                         <ul style="display: none"></ul>
                     </div>
                 </li>
                 <br>
                 <li class="v5">
-                    <h3><span class="version"></span> <span class="data"></span></h3>
+                    <h3><span class="version"></span> <span class="data" data-internationalize="date-format"></span></h3>
                     <div>
-                        <span class="change-log" onclick="logShow(this);">Show change log</span>
-                        <span class='release-download'><a href="#">Download</a></span>
+                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <span class='release-download'><a href="#" data-internationalize="title-download">Download</a></span>
                         <ul style="display: none"></ul>
                     </div>
                 </li>
@@ -152,13 +160,18 @@
     </section>
     <section id="Contribute" class="row">
         <div>
-            <p>Loading</p>
+            <p data-internationalize="title-loading">Loading</p>
         </div>
     </section>
-    <footer id="footer" class="row">
+    <footer id="footer" class="row text-center"">
         <div>
-            <p>Loading</p>
+            <p data-internationalize="title-loading">Loading</p>
         </div>
+        <span class="links">
+            <a href="https://pogo-uwp/#en-US" title="en-US" >EN-US</a>
+            <span>|</span>
+            <a href="https://pogo-uwp/#pt-BR" title="pt-BR" >PT-BR</a>
+        </span>
     </footer>
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/markdown.min.js"></script>
