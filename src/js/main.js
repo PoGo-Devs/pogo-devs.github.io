@@ -17,7 +17,6 @@ jQuery.getJSON("https://api.github.com/repos/ST-Apps/PoGo-UWP/releases", functio
             pad = "00";
             return pad.substring(0, pad.length - str.length) + str;
         }
-        //dataTime = dataTime.replace("Z", "").split(/[- :T]/);
         dataTime = new Date(dataTime);
         return dataFill(dataTime.getMonth()+1) + '/' + dataFill(dataTime.getDate()) + '/' + dataTime.getFullYear();
     }
@@ -30,11 +29,11 @@ jQuery.getJSON("https://api.github.com/repos/ST-Apps/PoGo-UWP/releases", functio
 
         changelogHtml = changelogHtml.replace(/(\* )?((Probably fixed)|(Probably solved)|(Fixed)|(fixed))( -)?/g, "<span class='fix label'>Fixed</span>");
         changelogHtml = changelogHtml.replace(/(\* )?(Added)( -)?/g, "<span class='add label'>Added</span>");
-        changelogHtml = changelogHtml.replace(/(\* )?(Updated)( -)?/g, "<span class='update label'>Updated</span>");
-        changelogHtml = changelogHtml.replace(/(\* )?(Removed)( -)?/g, "<span class='update label'>Removed</span>");
+        changelogHtml = changelogHtml.replace(/(\* )?((Updated)|(Changed))( -)?/g, "<span class='update label'>Updated</span>");
+        changelogHtml = changelogHtml.replace(/(\* )?(Removed)( -)?/g, "<span class='remove label'>Removed</span>");
+        changelogHtml = changelogHtml.replace(/(\* )?((Improved)|(Revamped))( -)?/g, "<span class='improved label'>Improved</span>");
         changelogHtml = changelogHtml.replace(/(#)([0-9]+)/g, "<a href='https://github.com/ST-Apps/PoGo-UWP/issues/$2' title='Issue $2'>Issue#$2</a>");
         changelogHtml = changelogHtml.replace(/\[(.*)\]\((.*)\)/g, "<a href='$2' title='$1'>$1</a>");
-
         jQuery(target + " .version").html(name);
         jQuery(target + " .data").html(published);
         jQuery(target + " .release-download a").attr("href", url);
