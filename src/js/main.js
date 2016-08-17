@@ -53,6 +53,7 @@ function htmlLoad() {
 
     // Load sections
     jQuery("#About div").load(locales + "/about.html");
+    jQuery("#Instructions div").load(locales + "/instructions.html");
     jQuery("#Contribute div").load(locales + "/contribute.html");
     jQuery("#footer div").load(locales + "/footer.html");
 

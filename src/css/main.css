@@ -85,12 +85,14 @@ section h1, section h2, section h3, section h4 {
     margin: 15px 0;
     font-weight: bold;
 }
-
 section h3 .data {
     float: right;
     background: #f9f9f9;
     padding: 5px 10px;
     font-size: 10px;
+}
+section#About ul, section#Instructions ol {
+    margin-left: 35px;
 }
 section#Releases ul li {
     background: #f0f0f0;
@@ -141,10 +143,6 @@ section#Releases span.remove { background: #b95454; }
 section#Releases span.improved { background: #50aadd; }
 section .change-log { background: #898989; }
 section .change-log:hover { background: #9a9a9a; }
-
-section#About ul {
-    margin-left: 35px;
-}
 
 /** FOOTER **/
 #footer {
