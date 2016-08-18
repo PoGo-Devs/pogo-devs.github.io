@@ -1,14 +1,14 @@
 // Function to show log from release on a onclick
-function logShow(button) {
-    ul = jQuery(button).parent().find('ul');
+function toggleContent(button) {
+    content = jQuery(button).parent().find('.content');
     show = jQuery(button).parent().find('.show');
     hide = jQuery(button).parent().find('.hide');
-    if (ul.css("display") == "none") {
-        ul.css("display", "block");
+    if (content.css("display") == "none") {
+        content.css("display", "block");
         show.css("display", "none");
         hide.css("display", "inline-block");
     } else {
-        ul.css("display", "none");
+        content.css("display", "none");
         show.css("display", "inline-block");
         hide.css("display", "none");
     }
@@ -32,7 +32,7 @@ function dataMaker(dataTime, dataFormat = "m/d/Y") {
 }
 
 // Turns markdown in html
-function decodeHtml(str) {
+function markdownToHtml(str) {
     str = markdown.toHTML(str);
     return str.replace(/&#([0-9]{1,3});/gi, function(match, numStr) {
         var num = parseInt(numStr, 10); // read num as normal number
@@ -58,17 +58,29 @@ function htmlLoad() {
     locales = "locales/" + language;
 
     // Load sections
-    jQuery("#About div").load(locales + "/about.html");
-    jQuery("#Instructions div").load(locales + "/instructions.html");
-    jQuery("#Contribute div").load(locales + "/contribute.html");
-    jQuery("#footer div").load(locales + "/footer.html");
+    jQuery.get(locales + "/about.md", function(data) {
+        about = markdownToHtml(data);
+        jQuery("#About div").html(about);
+    }, 'text');
+    jQuery.get(locales + "/instructions.md", function(data) {
+        instructions = markdownToHtml(data);
+        jQuery("#Instructions div").html(instructions);
+    }, 'text');
+    jQuery.get(locales + "/contribute.md", function(data) {
+        contribute = markdownToHtml(data);
+        jQuery("#Contribute div").html(contribute);
+    }, 'text');
+    jQuery.get(locales + "/footer.md", function(data) {
+        footer = markdownToHtml(data);
+        jQuery("#Footer .content").html(footer);
+    }, 'text');
 
     // Load releases
     jQuery.getJSON("https://api.github.com/repos/ST-Apps/PoGo-UWP/releases", function(items) {
         for (i = 0; i < 5; i++) {
 
             // Add changlog tags
-            changelogHtml = decodeHtml(items[i].body);
+            changelogHtml = markdownToHtml(items[i].body);
             changelogHtml = changelogHtml.replace(/(\* )?((Probably fixed)|(Probably solved)|(Fixed)|(fixed))( -)?/g, "<span class='fix label'>Fixed</span>");
             changelogHtml = changelogHtml.replace(/(\* )?(Added)( -)?/g, "<span class='add label'>Added</span>");
             changelogHtml = changelogHtml.replace(/(\* )?((Updated)|(Changed))( -)?/g, "<span class='update label'>Updated</span>");
@@ -76,13 +88,21 @@ function htmlLoad() {
             changelogHtml = changelogHtml.replace(/(\* )?((Improved)|(Revamped))( -)?/g, "<span class='improved label'>Improved</span>");
             changelogHtml = changelogHtml.replace(/(#)([0-9]+)/g, "<a href='https://github.com/ST-Apps/PoGo-UWP/issues/$2' title='Issue $2'>Issue#$2</a>");
             changelogHtml = changelogHtml.replace(/\[(.*)\]\((.*)\)/g, "<a href='$2' title='$1'>$1</a>");
-
+            
+            
             // Makes the data entry in HTML.
             target = "#Releases .v" + (i + 1);
+            
+            assets = items[i].assets;
+            for (a = 0; a < assets.length; a++) {
+                assetName = items[i].assets[a].name;
+                assetUrl = items[i].assets[a].browser_download_url;
+                jQuery(target + " .downloads .content").append("<a href='" + assetUrl + "' title='" + assetName + "'>" + assetName + "</a><br>");
+            }
+            
             jQuery(target + " .version").html(items[i].name);
             jQuery(target + " .data").html(dataMaker(items[i].published_at));
-            jQuery(target + " .release-download a").attr("href", items[i].assets[0].browser_download_url);
-            jQuery(target + " ul").append(changelogHtml);
+            jQuery(target + " .log .content").append(changelogHtml);
         }
     })
 

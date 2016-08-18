@@ -60,7 +60,7 @@
 </head>
 <body>
     <header class="row text-center">
-        <div class="content">
+        <div class="container">
             <div class="center">
                 <div class="logo">
                     <img src="src/img/logoLight.svg" alt="PoGo - Open source Pokemon Go from UWP" width="200" data-internationalize="page-title">
@@ -104,60 +104,74 @@
     <section id="Releases" class="row">
         <div>
             <h2 data-internationalize="title-releases">Releases</h2>
-            <ul>
-                <br>
-                <li class="v1" style="background: #DBF0DB">
+            <div>
+                <div class="v1 container" style="background: #E1F0E1">
                     <h3><span class="newest" data-internationalize="title-newest">Newest!</span></h3>
                     <h3><span class="version"></span><span class="data" data-internationalize="date-format"></span></h3>
-                    <div>
-                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
-                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
-                        <span class='release-download'><a href="#" data-internationalize="title-download">Download</a></span>
-                        <ul style="display: none"></ul>
+                    <div class="downloads">
+                        <span class='show toggle' onclick="toggleContent(this);" data-internationalize="title-show-downloads">Show downloads</span>
+                        <span class='hide toggle' onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-downloads">Hide downloads</span>
+                        <span class="content" style="display: none"></span>
                     </div>
-                </li>
-                <br>
-                <li class="v2">
+                    <div class="log">
+                        <span class="show toggle" onclick="toggleContent(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="hide toggle" onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <div class="content" style="display: none"></div>
+                    </div>
+                </div>
+                <div class="v2 container">
                     <h3><span class="version"></span> <span class="data" data-internationalize="date-format"></span></h3>
-                    <div>
-                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
-                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
-                        <span class='release-download'><a href="#" data-internationalize="title-download">Download</a></span>
-                        <ul style="display: none"></ul>
+                    <div class="downloads">
+                        <span class='show toggle' onclick="toggleContent(this);" data-internationalize="title-show-downloads">Show downloads</span>
+                        <span class='hide toggle' onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-downloads">Hide downloads</span>
+                        <span class="content" style="display: none"></span>
                     </div>
-                </li>
-                <br>
-                <li class="v3">
+                    <div class="log">
+                        <span class="show toggle" onclick="toggleContent(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="hide toggle" onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <div class="content" style="display: none"></div>
+                    </div>
+                </div>
+                <div class="v3 container">
                     <h3><span class="version"></span> <span class="data" data-internationalize="date-format"></span></h3>
-                    <div>
-                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
-                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
-                        <span class='release-download'><a href="#" data-internationalize="title-download');">Download</a></span>
-                        <ul style="display: none"></ul>
+                    <div class="downloads">
+                        <span class='show toggle' onclick="toggleContent(this);" data-internationalize="title-show-downloads">Show downloads</span>
+                        <span class='hide toggle' onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-downloads">Hide downloads</span>
+                        <span class="content" style="display: none"></span>
                     </div>
-                </li>
-                <br>
-                <li class="v4">
+                    <div class="log">
+                        <span class="show toggle" onclick="toggleContent(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="hide toggle" onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <div class="content" style="display: none"></div>
+                    </div>
+                </div>
+                <div class="v4 container">
                     <h3><span class="version"></span> <span class="data" data-internationalize="date-format"></span></h3>
-                    <div>
-                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
-                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
-                        <span class='release-download'><a href="#" data-internationalize="title-download">Download</a></span>
-                        <ul style="display: none"></ul>
+                    <div class="downloads">
+                        <span class='show toggle' onclick="toggleContent(this);" data-internationalize="title-show-downloads">Show downloads</span>
+                        <span class='hide toggle' onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-downloads">Hide downloads</span>
+                        <span class="content" style="display: none"></span>
                     </div>
-                </li>
-                <br>
-                <li class="v5">
+                    <div class="log">
+                        <span class="show toggle" onclick="toggleContent(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="hide toggle" onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <div class="content" style="display: none"></div>
+                    </div>
+                </div>
+                <div class="v5 container">
                     <h3><span class="version"></span> <span class="data" data-internationalize="date-format"></span></h3>
-                    <div>
-                        <span class="change-log show" onclick="logShow(this);" data-internationalize="title-show-log">Show change log</span>
-                        <span class="change-log hide" onclick="logShow(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
-                        <span class='release-download'><a href="#" data-internationalize="title-download">Download</a></span>
-                        <ul style="display: none"></ul>
+                    <div class="downloads">
+                        <span class="show toggle" onclick="toggleContent(this);" data-internationalize="title-show-downloads">Show downloads</span>
+                        <span class="hide toggle" onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-downloads">Hide downloads</span>
+                        <span class="content" style="display: none"></span>
                     </div>
-                </li>
-                <br>
-            </ul>
+                    <div class="log">
+                        <span class="show toggle" onclick="toggleContent(this);" data-internationalize="title-show-log">Show change log</span>
+                        <span class="hide toggle" onclick="toggleContent(this);" style="display: none" data-internationalize="title-hide-log">Hide change log</span>
+                        <div class="content" style="display: none"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="Instructions" class="row">
@@ -170,8 +184,8 @@
             <p data-internationalize="title-loading">Loading</p>
         </div>
     </section>
-    <footer id="footer" class="row text-center"">
-        <div>
+    <footer id="Footer" class="row text-center">
+        <div class="content">
             <p data-internationalize="title-loading">Loading</p>
         </div>
         <span class="links">

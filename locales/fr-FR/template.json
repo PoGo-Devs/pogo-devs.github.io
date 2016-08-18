@@ -15,5 +15,6 @@
 	"title-newest": "Nouveautés!",
 	"title-show-log": "Afficher le change log",
 	"title-hide-log": "Masquer change log",
-	"title-download": "Télécharger"
+	"title-show-downloads": "Afficher les téléchargements",
+	"title-hide-downloads": "Hide téléchargements"
 }

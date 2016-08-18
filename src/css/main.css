@@ -25,7 +25,6 @@ h4 { font-size: 13px; }
     padding: 0 10px;
 }
 
-
 /** HEADER **/
 header {
     height: 100vh;
@@ -34,20 +33,20 @@ header {
     background-position: center center;
     color: #fff;
 }
-header .content {
+header .container {
     position: relative;
     top: 50%;
     margin-top: -160px;
 }
-header .content .center {
+header .container .center {
     background: rgba(0, 0, 0, 0.1);
     padding: 15px 30px;
     max-width: 650px;
 }
-header .content .center .logo {
+header .container .center .logo {
     padding: 25px 0;
 }
-header .content .center .text hr {
+header .container .center .text hr {
     background: #ddeeee;
     height: 1px;
     width: 100%;
@@ -76,6 +75,7 @@ header .content .center .text hr {
 section div {
     color: #888;
     font-size: 13px;
+    line-height: 1.3;
 }
 section div p, section div .p {
     margin: 15px;
@@ -91,61 +91,69 @@ section h3 .data {
     padding: 5px 10px;
     font-size: 10px;
 }
-section#About ul, section#Instructions ol {
-    margin-left: 35px;
+section ul, section ol {
+    margin: 0 0 0 35px;
 }
-section#Releases ul li {
+section ul li {
+    margin: 10px 15px;
+    list-style-type: circle;
+}
+#Releases .container {
+    margin: 15px 0;
     background: #f0f0f0;
+    border: 1px solid #cccccc;
+    padding: 5px 20px 15px 20px;
+}
+#Releases .content {
+    background: #f9f9f9;
     border: 1px solid #e0e0e0;
     list-style-type: none;
     margin: 0px;
     padding: 20px;
+    line-height: 2;
 }
-section#Releases ul li ul {
-    border: none;
-    background: #fff;
-    display: none;
-    padding: 10px 30px;
-    margin: 0;
-}
-section#Releases ul li ul li {
-    background: #fff;
-    border: none;
-    padding: 0;
-    margin: 10px 15px;
-    color: #666;
-    list-style-type: circle;
-}
-section .change-log, section .release-download a, section#Releases span.label {
+span.toggle, #Releases span.label {
+    background: #5cc8ba;
+    color: #f0f0f0;
     cursor: pointer;
     display: inline-block;
     font-size: 10px;
     margin: 5px 0 0 0;
+    min-width: 75px;
     padding: 5px 10px;
     text-transform: uppercase;
-    color: #f0f0f0;
-}
-section .change-log:hover, section .release-download a:hover, section#Releases ul li ul li span:hover {
-    color: #ffffff;
-}
-section#Releases span.label {
-    cursor: default;
-    margin: 0 5px 0 0;
-    min-width: 75px;
     text-align: center;
 }
-section .release-download a { background: #5cc8ba; }
-section .release-download a:hover { background: #5cd8c8; }
-section#Releases span.fix { background: #e89153; }
-section#Releases span.add { background: #59c554; }
-section#Releases span.update { background: #9955c5; }
-section#Releases span.remove { background: #b95454; }
-section#Releases span.improved { background: #50aadd; }
-section .change-log { background: #898989; }
-section .change-log:hover { background: #9a9a9a; }
+.toggle:hover, #Releases span.label:hover {
+    background: #5cc8ba;
+    color: #ffffff;
+}
+#Releases span.label { cursor: default; margin: 0 5px 0 0; }
+#Releases .downloads .toggle { background: #5cc8ba; }
+#Releases .downloads .toggle:hover { background: #5cd8c8; }
+#Releases .log .toggle { background: #898989; }
+#Releases .log .toggle:hover { background: #9a9a9a; }
+#Releases span.fix { background: #e89153; }
+#Releases span.add { background: #59c554; }
+#Releases span.update { background: #9955c5; }
+#Releases span.remove { background: #b95454; }
+#Releases span.improved { background: #50aadd; }
+
+.code {
+    font-family: monospace;
+    padding: 16px;
+    overflow: auto;
+    font-size: 13px;
+    line-height: 1.45;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+span.code {
+    padding: 5px 10px;
+}
 
 /** FOOTER **/
-#footer {
+#Footer {
     background: #333;
     color: #f5f5f5;
     font-size: 13px;
@@ -153,20 +161,20 @@ section .change-log:hover { background: #9a9a9a; }
     margin-top: 50px;
     padding-bottom: 50px;
 }
-#footer p {
+#Footer p {
 	margin-bottom: 10px;
 }
-#footer .links {
+#Footer .links {
     margin-top: 50px;
     display: block;
     background: rgba(255,255,255,0.1);
     padding: 10px;
 }
-#footer .links a, #footer .links span {
+#Footer .links a, #footer .links span {
     font-size: 12px;
     color: #f0f0f0;
 }
-#footer .links a:hover {
+#Footer .links a:hover {
     color: #fff;
 }
 
@@ -175,7 +183,7 @@ section .change-log:hover { background: #9a9a9a; }
         height: auto;
         min-height: 100vh;
     }
-    header .content {
+    header .container {
         margin-top: 0;
         display: block;
         position: inherit;
@@ -190,15 +198,15 @@ section .change-log:hover { background: #9a9a9a; }
     header .links span {
         display: none;
     }
-    section#Releases ul {
+    #Releases ul {
         margin: 0;
         padding: 0px;
     }
-    section#Releases ul li {
+    #Releases ul li {
         margin: 0;
         padding: 10px;
     }
-    section#Releases ul li ul {
+    #Releases ul li ul {
         padding: 5px 15px;
     }
 }
