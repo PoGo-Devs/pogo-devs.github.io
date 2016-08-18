@@ -49,7 +49,13 @@ function htmlLoad() {
     // Change user language if it access by a link from another language
     if (window.location.href.search("#") != -1) { var ancora = window.location.href.split("#")[1]; } else { ancora = ""; }
     if (ancora.search("-") == 2 && ancora.length == 5) { language = ancora; }
-    locales = "locales/" + language.toLowerCase();
+
+    language = language.split("-");
+    lang = language[0].toLowerCase();
+    variant = language[1].toUpperCase();
+    language = lang + "-" + variant;
+
+    locales = "locales/" + language;
 
     // Load sections
     jQuery("#About div").load(locales + "/about.html");
