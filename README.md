@@ -1,8 +1,8 @@
 ## Website of PoGo-UWP Project
+If you can, help with the internationalization of the website.
 
-If you can help with the internationalization of the website:
-- Within the [Locales](https://github.com/PoGo-Devs/PoGo-Devs.github.io/tree/master/locales) folder, copy the `en-US` folder and rename it to the target language.
-- Translate the files inside.
-- Make a Pull Request. Done.
-
-If it's not there yet, later the new language will be added to the website footer.
+ - Check if exists a [issue](https://github.com/PoGo-Devs/PoGo-Devs.github.io/issues) already assigned to your language.
+   - If exists, check the current state and see how you can help.
+   - If not exists, create one and follow the steps below to initiate the translation for the new language.
+     - Within the [Locales](https://github.com/PoGo-Devs/PoGo-Devs.github.io/tree/master/locales) folder, a copy the `en-US` folder must be done, rename it to the target language.
+     - Start a new translation.
