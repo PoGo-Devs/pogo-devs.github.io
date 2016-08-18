@@ -1,0 +1,19 @@
+{
+	"date-format": "d/m/Y",
+	"page-title": "PoGo - Pokemon Go client van UWP",
+	"page-description": "PoGo, een UWP (Universal Windows Platform) client voor Niantic's Pokémon© Go",
+	"title-about": "Over het project",
+	"title-releases": "Releases",
+	"title-instructions": "Instructies",
+	"title-contribute": "Contribueren",
+	"title-social": "Sociaal",
+	"title-github": "GitHub",
+	"title-reddit": "Reddit",
+	"title-discord": "DiscordApp",
+	"title-telegram": "Telegram",
+	"tille-loading": "Loading...",
+	"title-newest": "Newest!",
+	"title-show-log": "Laat change log zien",
+	"title-hide-log": "Laat change log niet zien",
+	"title-download": "Download"
+}
