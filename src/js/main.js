@@ -82,7 +82,7 @@ function htmlLoad() {
 
     // Do the language change if load of releases is done
     .done(function () {
-        jQuery.getJSON(locales + "/translation.json", function(items) {
+        jQuery.getJSON(locales + "/template.json", function(items) {
             jQuery('[data-internationalize]').html(function() {
                 type = this.nodeName.toLowerCase();
                 data = jQuery(this).data("internationalize");

@@ -180,11 +180,14 @@ section .change-log:hover { background: #9a9a9a; }
         display: block;
         position: inherit;
     }
-    #links a {
+    header .links a {
         display: block;
         padding: 10px 0;
     }
-    #links span {
+	.links a {
+		font-size: 15px;
+    }
+    header .links span {
         display: none;
     }
     section#Releases ul {
