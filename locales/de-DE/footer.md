@@ -1,5 +1,5 @@
-PoGo is in no way affiliated with, authorized, maintained, sponsored or endorsed by Niantic, The Pokémon Company, Nintendo or any of its affiliates or subsidiaries. Use at your own risk.
+PoGo ist mit Niantic, The Pokémon Company, Nintendo oder einer ihrer Tochter- oder Beteiligungsgesellschaften weder geschäftlich verbunden, noch wird PoGo von Niantic, The Pokémon Company oder Nintendo ermächtigt, unterhalten, gefördert oder unterstützt. Benutzung auf eigene Gefahr.
 
-Pokémon© and all associated logos and designs are trademarks or registered trademarks or service marks of The Pokémon Company©.
+Alle Bilder, Inhalte und Informationen aus dem Spiel sind geschützt durch The Pokémon Company©.
 
-All rights reserved and other trademarks are the property of their respective owners.
+Alle Rechte und andere geschützte Inhalte gehören ihren rechtmäßigen Besitzern.
