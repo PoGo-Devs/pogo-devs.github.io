@@ -11,6 +11,6 @@ PoGo-UWP ist ein UWP (Universal Windows Platform) Client für Niantics Pokémon�
 ### Momentane Features
  - Login mit Pokemon™ Trainer Club Accounts
  - Gleiche Benutzeroberfläche wie die Android/iOS Version, aber nur 2D
- - Benutze die Karte um sowohl Pokémon als auch PokéStops in deiner Nähe zu sehen
+ - Benutze die Karte um sowohl Pokémon, als auch PokéStops in deiner Nähe zu sehen
  - Fange Pokémon
  - Besuche PokéStops und erhalte neue Items
