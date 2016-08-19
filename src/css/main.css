@@ -125,7 +125,6 @@ span.toggle, #Releases span.label {
     text-align: center;
 }
 .toggle:hover, #Releases span.label:hover {
-    background: #5cc8ba;
     color: #ffffff;
 }
 #Releases span.label { cursor: default; margin: 0 5px 0 0; }

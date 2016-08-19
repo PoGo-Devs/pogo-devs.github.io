@@ -1,4 +1,5 @@
 ## Instructions
+
  - Create a [Pokemon™ Trainer Club](https://www.pokemon.com/us/pokemon-trainer-club/caslogin) account
  - Login on the Android/iOS app to choose your starter (you can use Bluestacks)
  - Logout from the official app
