@@ -1,7 +1,7 @@
 {
 	"date-format": "m/d/Y",
-	"page-title": "PoGo - Pokemon Go client from UWP",
-	"page-description": "PoGo, an UWP (Universal Windows Platform) client for Niantic's Pokémon© Go",
+	"page-title": "PoGo - Pokémon Go client for Windows 10",
+	"page-description": "PoGo, an open-source Pokémon Go client for Windows 10",
 	"title-about": "About project",
 	"title-releases": "Releases",
 	"title-instructions": "Instructions",

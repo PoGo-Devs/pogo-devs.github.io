@@ -1,10 +1,10 @@
 ## About the project
 
-### What is PoGo-UWP?
+### What is PoGo?
 
-PoGo-UWP is an UWP (Universal Windows Platform) client for Niantic's Pokemon™ Go Android/iOS game. Being a client, this means that it gives you the ability to play in the same game-world as your friends that are playing with an Android or iOS device.
+PoGo is an Windows 10 client for Niantic's Pokemon™ Go Android/iOS game. Being a client, this means that it gives you the ability to play in the same game-world as your friends that are playing with an Android or iOS device.
 
-### Why PoGo-UWP?
+### Why PoGo?
  - Because learning new things is always cool
  - Because it could be done
  

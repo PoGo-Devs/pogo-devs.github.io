@@ -1,7 +1,7 @@
 {
 	"date-format": "d/m/Y",
-	"page-title": "PoGo - Pokémon Go Anwendung für UWP",
-	"page-description": "PoGo, eine UWP (Universal Windows Platform) Anwendung basierend auf Niantics Pokémon© Go",
+	"page-title": "PoGo - Pokémon Go Anwendung für Windows 10",
+	"page-description": "PoGo, eine open-source Pokémon Go Client für Windows 10",
 	"title-about": "Über das Projekt",
 	"title-releases": "Releases",
 	"title-instructions": "Anleitung",
