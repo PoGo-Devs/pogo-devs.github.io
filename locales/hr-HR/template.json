@@ -11,10 +11,10 @@
 	"title-reddit": "Reddit",
 	"title-discord": "Nesloga",
 	"title-telegram": "Telegram",
-	"title-loading": "Loading...",
-	"title-newest": "Newest!",
-	"title-show-log": "Show change log",
-	"title-hide-log": "Hide change log",
-	"title-show-downloads": "Show Downloads",
-	"title-hide-downloads": "Hide Downloads"
+	"title-loading": "Učitavanje...",
+	"title-newest": "Najnovije!",
+	"title-show-log": "Prikaži popis promjena",
+	"title-hide-log": "Sakrij popis promjena",
+	"title-show-downloads": "Prikaži preuzimanja",
+	"title-hide-downloads": "Sakrij Preuzimanja"
 }
