@@ -1,15 +1,15 @@
 ## instrucciones	
 
  - Crear una Cuenta [Club de entranadores pokemon](https://www.pokemon.com/us/pokemon-trainer-club/caslogin)
- - Inicio de sesi髇 en la aplicaci髇 de Android/iOS para elegir su Pokemon incial(puede usar Nox)
- - Cerrar sesi髇 de la aplicacion oficial 
+ - Inicio de sesi贸n en la aplicaci贸n de Android/iOS para elegir su Pokemon incial(puede usar Nox)
+ - Cerrar sesi贸n de la aplicacion oficial 
  - Descargar el paquete ZIP para su arquitectura(ARM para W10M, x86/x64 para W10 PC)
- - Cambiar la configuraci髇 de almacenamiento de tarjeta SD al almacenamiento de tel閒ono
+ - Cambiar la configuraci贸n de almacenamiento de tarjeta SD al almacenamiento de tel茅fono
  - Habilitar dispositivo Portal
- - Navegar a la p醙ina de aplicaciones en dispositivo de Portal
+ - Navegar a la p谩gina de aplicaciones en dispositivo de Portal
  - Elegir PokemonGo-UWP_version.appx bajo "Instalar App"
- - Haga clic en "A馻dir dependencia" dos veces y a馻dir los archivos que est醤 dentro de la carpeta de dependencias
- - Haga clic en "Go" en "Desplegar" y espere hasta que aparezca "echo!"
- - iniciar la aplicaci髇 en su dispositivo
- - Iniciar sesi髇
+ - Haga clic en "A帽adir dependencia" dos veces y a帽adir los archivos que est谩n dentro de la carpeta de dependencias
+ - Haga clic en "Go" en "Desplegar" y espere hasta que aparezca "隆hecho!"
+ - iniciar la aplicaci贸n en su dispositivo
+ - Iniciar sesi贸n
  - Que te diviertas
