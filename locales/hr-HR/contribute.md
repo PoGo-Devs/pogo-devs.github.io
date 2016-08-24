@@ -1,6 +1,5 @@
-## Contribute
+## Doprinos
 
-If you want to provide feedback and/or report a bug, please use [GitHub Issues](https://github.com/ST-Apps/PoGo-UWP/issues) (you'll need a free GitHub account).
-To make things easier, please search for opened issues before starting a new one so that we avoid useless duplicates.
+Ako zelite pridonijeti povratne informacije i/ili prijaviti bug, molim koristi [GitHubProblemi](https://github.com/ST-Apps/PoGo-UWP/issues) (Morati ćes imati besplatni GitHub račun).Da bi smo olakšali stvari, molim pretražite za otvorenim problemima prije počinjanjanovog tako da bismo izbjegli duplikate.
 
-Every kind of help is appreciated, feel free to submit a pull request if you feel that you can improve my code or add new features!
+Svaka pomoć se cijeni, osjecajte se slobodno objaviti zahtjev za povuči ako osjecas da možeš poboljšati moj kod ili dodati nove značajke 
