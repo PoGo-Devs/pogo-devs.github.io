@@ -1,8 +1,8 @@
-## About the project
+## O projektu
 
-### What is PoGo?
+### Što je PoGo?
 
-PoGo is an Windows 10 client for Niantic's Pokemon™ Go Android/iOS game. Being a client, this means that it gives you the ability to play in the same game-world as your friends that are playing with an Android or iOS device.
+PoGo je Windows 10 klijent za Nianticov Po
 
 ### Why PoGo?
  - Because learning new things is always cool
