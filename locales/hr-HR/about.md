@@ -2,15 +2,16 @@
 
 ### Što je PoGo?
 
-PoGo je Windows 10 klijent za Nianticov Po
+PoGo je Windows 10 klijent za Nianticov Pokemon™ Go Android/IOS igra. Pošto je kijent, to znaci da vam daje
+mogucnost da igrate u istom svijetu igre kao i vasi prijatelji Android ili IOS uređaju. 
 
-### Why PoGo?
- - Because learning new things is always cool
- - Because it could be done
+### Zašto PoGo?
+ - Zato jer ucenje novih stvari je uvijek kul
+ - Zato jer je moguce to napraviti
  
-### Current features
- - Login with Pokemon™ Trainer Club accounts
- - Similar UI as the Android/iOS version but 2D only
- - Use the map to see both Pokemons and PokeStops near your location
- - Catch Pokemons
- - Visit PokeStops and get new items
+### Trenutne značajke
+ - Ulogiraj se sa Pokemon™ Trener klub računom
+ - Slični UI kao Android/IOS verzija ali samo 2D
+ - Koristi mapu da da bi ste vidjeli Pokemone i PokeStops blizu tvoje lokacije 
+ - Hvataj Pokemone
+ - Posjeti PokeStops i dobivaj nove stvari
