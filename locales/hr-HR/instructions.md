@@ -1,15 +1,15 @@
 ## Instructions
 
- - Create a [Pokemon™ Trainer Club](https://www.pokemon.com/us/pokemon-trainer-club/caslogin) account
- - Login on the Android/iOS app to choose your starter (you can use Bluestacks)
- - Logout from the official app
- - Download the ZIP package for your architecture (ARM for mobile, x86/x64 for PC)
- - Change your storage settings from SD card to phone storage
- - Enable Device Portal
- - Navigate to APPS page on Device Portal
- - Choose PokemonGo-UWP_version.appx under "Install App"
- - Click on "Add Dependency" twice and add the files that are inside Dependencies folder
- - Click on "Go" under "Deploy" and wait until "Done!" is shown
- - Launch the app on your device
- - Login
- - Have fun
+ - Napravi [Pokemon™ Trener Klub](https://www.pokemon.com/us/pokemon-trainer-club/caslogin) račun
+ - Ulogiraj se na Android/IOS uređaju da izabereš svoj početak (možeš koristiti Bluestacks)
+ - Izlogiraj se iz službene aplikacije
+ - Preuzmi Zip datoteku Za tvoju arhitekturu (ARM za mobitele, x86/x64 za PC)
+ - Promjeni svoje postavke za pohranu sa SD kartice na pohranu mobitela
+ - Omoguči Portal za Uređaje
+ - Kreni na APPS stranicu na Portalu za Uređaje
+ - Izaberi PokemonGo-UWP_version.appx u "Instaliranim aplikacijama"
+ - klikni na "dodaj zavisne datoteke" dva puta i dodaj dadoteke koje su unutar zavisne mape
+ - Klikni na "Go" na "Razviti" i čekaj do "Gotovo!" se ne pojavi!
+ - Pokreni aplikaciju na svom uređaju
+ - Ulogiraj se
+ - Zabavi se
