@@ -2,7 +2,7 @@
 
 ### Što je PoGo?
 
-PoGo je Windows 10 klijent za Nianticov Pokemon™ Go Android/IOS igra. Pošto je kijent, to znaci da vam daje
+PoGo je Windows 10 klijent za Nianticov Pokemon™ Go Android/IOS igru. Pošto je kijent, to znaci da vam daje
 mogucnost da igrate u istom svijetu igre kao i vasi prijatelji na Android ili IOS uređaju. 
 
 ### Zašto PoGo?
